@@ -1,5 +1,7 @@
-## Find all employees first name by their last name from the employee list, put all the first name  into a list then convert the list to an Array
-findArrayOfFirstNameByLastNameFromEmployeeList()
+Find all employees first name by their last name from the employee list, put all the first name  into a list then convert the list to an Array
 
-## Sort all employees by their salary
-fndAllEmployeesSortedBySalary()
+## findArrayOfFirstNameByLastNameFromEmployeeList()
+
+Sort all employees by their salary
+
+## fndAllEmployeesSortedBySalary()
