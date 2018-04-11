@@ -15,6 +15,7 @@ public class EmployeeService1 {
     public EmployeeService1() {
         this.employeeRepository = new EmployeeRepository();
         employeeRepository.addEmployee();
+        employeeRepository.addDepartment();
     }
 
     public String[] findArrayOfFirstNameByLastNameFromEmployeeList(String lastName) {
@@ -51,5 +52,12 @@ public class EmployeeService1 {
 
         return sortedEmployeeList;
 
+    }
+
+    public List<Employee> findEmployeesGroupByDepartment() {
+
+        // List<Employee>
+
+        return null;
     }
 }

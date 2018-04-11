@@ -40,4 +40,9 @@ public class EmployeeService1Test {
         List<Employee> sortedEmployeeList = employeeService1.fndAllEmployeesSortedBySalary();
         sortedEmployeeList.forEach(System.out::println);
     }
+
+    @Test
+    public void findEmployeesGroupByDepartmentName() throws Exception {
+        List<Employee> employeesGroupByDepartment = employeeService1.findEmployeesGroupByDepartment();
+    }
 }
