@@ -49,12 +49,11 @@ public class EmployeeRepository {
     public void addDepartment(){
 
         departmentList = Arrays.asList(
-
                 new Department("departmentId1","Computer Science","Science"),
                 new Department("departmentId2","Mathematics","Science"),
                 new Department("departmentId3","Physics","Science"),
                 new Department("departmentId4","History","Arts"),
-                new Department("departmentId4","Geography","Arts"));
+                new Department("departmentId5","Geography","Arts"));
 
     }
 
