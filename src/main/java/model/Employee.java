@@ -15,5 +15,6 @@ public class Employee {
     private Phone phone;
     private Address address;
     private Double salary;
+    private String departmentId;
 
 }
