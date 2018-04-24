@@ -6,7 +6,10 @@ import repository.EmployeeRepository;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.groupingBy;
 
 public class EmployeeService1 {
 
@@ -54,10 +57,14 @@ public class EmployeeService1 {
 
     }
 
-    public List<Employee> findEmployeesGroupByDepartment() {
+    public Map<String , List<Employee>> findEmployeesGroupByDepartment() {
 
-        // List<Employee>
+         List<Employee> employees = employeeRepository.getEmployeeList();
 
-        return null;
+         return employees.stream()
+                         .collect(groupingBy(Employee::getDepartmentId));
+
+
     }
+
 }

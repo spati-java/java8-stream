@@ -5,6 +5,7 @@ import service.EmployeeService1;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -43,6 +44,8 @@ public class EmployeeService1Test {
 
     @Test
     public void findEmployeesGroupByDepartmentName() throws Exception {
-        List<Employee> employeesGroupByDepartment = employeeService1.findEmployeesGroupByDepartment();
+        Map<String , List<Employee>> employeesGroupByDepartment = employeeService1.findEmployeesGroupByDepartment();
+        System.out.println(employeesGroupByDepartment.get("departmentId1"));
     }
+
 }
